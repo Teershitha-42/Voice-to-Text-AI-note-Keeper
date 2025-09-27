@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice to Text AI Keeper</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papLFJ4y/6Kxz/PFLwv4fDR5/2GuNU2nVWgTf0KmlVTLyR/zHQL9VKXSSGiZuCkU1hFV46W6Ow4kORlK+urxwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="galaxy">
+    <div class="dashboard">
+      <header>
+        <h1><i class="fa-solid fa-microchip"></i> AI Voice Keeper</h1>
+        <div class="toggle-mode">
+          <span class="label">☀️</span>
+          <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+          </label>
+          <span class="label">🌙</span>
+        </div>
+      </header>
+
+      <div class="waveform">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn">Start <i class="fa-solid fa-play"></i></button>
+        <button id="stopBtn">Stop <i class="fa-solid fa-stop"></i></button>
+      </div>
+
+      <div class="transcript">
+        <h2>Transcript</h2>
+        
+        <p id="transcriptBox">Waiting for input...</p>
+      </div>
+      
+       <div class="ai-orb">
+       <div class="orb-glow"></div>
+       <div class="chat-bubbles" id="chatBubbles"></div>
+       <div class="ai-speech">Hi babe, I’m listening... 🎧</div>
+      </div>
+      <!-- Talking Tom Section -->
+      <h3>🐱 Talking Tom</h3>
+      <img id="talkingTomImg" src="https://i.postimg.cc/50tGLYH9/talking-tom.jpg" alt="Talking Tom" width="200" />
+      <br />
+      <input type="text" id="tomInput" placeholder="Type something..." />
+      <button id="tomTalkBtn">Make Tom Talk</button>
+
+
+      <footer>
+        <p>🌌 Built with ❤️ by Tishi | Voice-to-Text AI Keeper</p>
+      </footer>
+    </div>
+  </div>
+
+
+  
+  <script src="/script.js"></script>
+</body>
+</html>
