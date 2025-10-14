@@ -14,7 +14,7 @@ const mongoose = require("mongoose");
 const app = express();
 const upload = multer({ dest: "uploads/" });
 const PORT = 3000;
-const API_KEY = "11e98b29f065455b8d5c50292d1406e1"; // 👉 Replace with your AssemblyAI API key
+const API_KEY = ""; // 👉 Replace with your AssemblyAI API key
 
 // Connect to MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/voiceapp");
